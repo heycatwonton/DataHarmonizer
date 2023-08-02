@@ -59,5 +59,12 @@
       "status": "published",
       "display": true
     }
+  },
+  "ess-dive": {
+    "ESS-DIVE": {
+      "name": "ESS-DIVE",
+      "status": "published",
+      "display": true
+    }
   }
 }

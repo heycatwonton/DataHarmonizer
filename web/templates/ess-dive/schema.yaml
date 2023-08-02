@@ -196,7 +196,7 @@ slots:
     name: Object Type
     title: Object Type
     description: Broad characterization of the nature of a sample or specimen.
-    comments: Provide feedback on additional terms or revisions needed.
+    comments: Provide feedback on additional terms or revisions needed
     examples:
     - value: Core
     - value: Individual Sample
