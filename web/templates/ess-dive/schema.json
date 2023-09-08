@@ -1581,21 +1581,7 @@
       ],
       "from_schema": "https://w3id.org/ess-dive",
       "recommended": true,
-      "pattern": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+)$",
-      "any_of": [
-        {
-          "range": "double"
-        },
-        {
-          "range": "float"
-        },
-        {
-          "range": "decimal"
-        },
-        {
-          "range": "integer"
-        }
-      ]
+      "pattern": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+)$"
     },
     "Filter Size Unit": {
       "name": "Filter Size Unit",
@@ -1627,7 +1613,8 @@
       ],
       "from_schema": "https://w3id.org/ess-dive",
       "range": "string",
-      "recommended": true
+      "recommended": true,
+      "pattern": "^[A-Z][a-z]+ [a-z][a-zA-Z]+$"
     },
     "sampleRemarks": {
       "name": "sampleRemarks",
@@ -1764,24 +1751,11 @@
         }
       ],
       "from_schema": "https://w3id.org/ess-dive",
+      "range": "double",
       "recommended": true,
       "minimum_value": -90,
       "maximum_value": 90,
-      "pattern": "^\\d+(\\.\\d{1,6})?$",
-      "any_of": [
-        {
-          "range": "double"
-        },
-        {
-          "range": "decimal"
-        },
-        {
-          "range": "float"
-        },
-        {
-          "range": "integer"
-        }
-      ]
+      "pattern": "^\\d+(\\.\\d{1,6})?$"
     },
     "Longitude (Coordinate system WGS 84)": {
       "name": "Longitude (Coordinate system WGS 84)",
@@ -1796,24 +1770,11 @@
         }
       ],
       "from_schema": "https://w3id.org/ess-dive",
+      "range": "double",
       "recommended": true,
       "minimum_value": -180,
       "maximum_value": 180,
-      "pattern": "^\\d+(\\.\\d{1,6})?$",
-      "any_of": [
-        {
-          "range": "double"
-        },
-        {
-          "range": "decimal"
-        },
-        {
-          "range": "float"
-        },
-        {
-          "range": "integer"
-        }
-      ]
+      "pattern": "^\\d+(\\.\\d{1,6})?$"
     },
     "Navigation type": {
       "name": "Navigation type",
@@ -1892,9 +1853,6 @@
         },
         {
           "range": "float"
-        },
-        {
-          "range": "integer"
         }
       ]
     },
@@ -1921,9 +1879,6 @@
         },
         {
           "range": "float"
-        },
-        {
-          "range": "integer"
         }
       ]
     },
@@ -1967,9 +1922,6 @@
         },
         {
           "range": "float"
-        },
-        {
-          "range": "integer"
         }
       ]
     },
@@ -1997,9 +1949,6 @@
         },
         {
           "range": "float"
-        },
-        {
-          "range": "integer"
         }
       ]
     },
@@ -2042,9 +1991,6 @@
         },
         {
           "range": "float"
-        },
-        {
-          "range": "integer"
         }
       ]
     },
@@ -2071,9 +2017,6 @@
         },
         {
           "range": "float"
-        },
-        {
-          "range": "integer"
         }
       ]
     },
@@ -2096,7 +2039,6 @@
         }
       ],
       "from_schema": "https://w3id.org/ess-dive",
-      "slot_uri": "ENVO",
       "range": "string",
       "recommended": true
     },
@@ -2116,7 +2058,6 @@
         }
       ],
       "from_schema": "https://w3id.org/ess-dive",
-      "slot_uri": "ENVO",
       "range": "string",
       "recommended": true
     },
@@ -2679,7 +2620,8 @@
           ],
           "slot_group": "Sample Description",
           "range": "string",
-          "recommended": true
+          "recommended": true,
+          "pattern": "^[A-Z][a-z]+ [a-z][a-zA-Z]+$"
         },
         "sampleRemarks": {
           "name": "sampleRemarks",
@@ -2798,6 +2740,7 @@
             "ESS-DIVE"
           ],
           "slot_group": "Location",
+          "range": "double",
           "recommended": true,
           "minimum_value": -90,
           "maximum_value": 90,
@@ -2815,6 +2758,7 @@
             "ESS-DIVE"
           ],
           "slot_group": "Location",
+          "range": "double",
           "recommended": true,
           "minimum_value": -180,
           "maximum_value": 180,
@@ -2987,7 +2931,6 @@
           "title": "Primary physiographic feature",
           "from_schema": "https://w3id.org/ess-dive",
           "rank": 39,
-          "slot_uri": "ENVO",
           "alias": "Primary_physiographic_feature",
           "owner": "ESS-DIVE",
           "domain_of": [
@@ -3003,7 +2946,6 @@
           "title": "biome",
           "from_schema": "https://w3id.org/ess-dive",
           "rank": 40,
-          "slot_uri": "ENVO",
           "alias": "biome",
           "owner": "ESS-DIVE",
           "domain_of": [

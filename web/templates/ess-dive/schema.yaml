@@ -359,11 +359,6 @@ slots:
     comments: Number range (float-float)
     examples:
       - value: 0-0.22
-    any_of:
-    - range: double
-    - range: float
-    - range: decimal
-    - range: integer
     pattern: '^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     recommended: true
   Filter Size Unit:
@@ -383,6 +378,7 @@ slots:
       - value: Vochysia ferruginea
       - value: Viconia borealis
     range: string
+    pattern: ^[A-Z][a-z]+ [a-z][a-zA-Z]+$
     recommended: true
   sampleRemarks:
     name: sampleRemarks
@@ -457,11 +453,7 @@ slots:
     comments: Decimal degrees, coordinate system is WGS 84. Please supply no more than 6 decimal places (meter scale resolution) in the actual number (not just display format.) No letters are allowed.
     examples:
       - value: 5.89634
-    any_of:
-    - range: double
-    - range: decimal
-    - range: float
-    - range: integer
+    range: double
     maximum_value: 90
     minimum_value: -90
     pattern: '^\d+(\.\d{1,6})?$'
@@ -473,11 +465,7 @@ slots:
     comments: Decimal degrees, coordinate system is WGS 84. Please supply no more than 6 decimal places (meter scale resolution) in the actual number (not just display format.) No letters are allowed.
     examples:
       - value: -103.785
-    any_of:
-      - range: double
-      - range: decimal
-      - range: float
-      - range: integer
+    range: double
     maximum_value: 180
     minimum_value: -180
     pattern: '^\d+(\.\d{1,6})?$'
@@ -522,7 +510,6 @@ slots:
       - range: double
       - range: decimal
       - range: float
-      - range: integer
     recommended: false
   Elevation end:
     name: Elevation end
@@ -535,7 +522,6 @@ slots:
       - range: double
       - range: decimal
       - range: float
-      - range: integer
     recommended: false
   Elevation unit:
     name: Elevation unit
@@ -557,7 +543,6 @@ slots:
       - range: double
       - range: decimal
       - range: float
-      - range: integer
     pattern: '^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     recommended: true
   Depth in core (max):
@@ -571,7 +556,6 @@ slots:
       - range: double
       - range: decimal
       - range: float
-      - range: integer
     pattern: '^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     recommended: true
   Depth scale:
@@ -594,7 +578,6 @@ slots:
       - range: double
       - range: decimal
       - range: float
-      - range: integer
     required: false
   maximumDistanceAboveSurfaceInMeters:
     name: maximumDistanceAboveSurfaceInMeters
@@ -607,7 +590,6 @@ slots:
       - range: double
       - range: decimal
       - range: float
-      - range: integer
     required: false
   Primary physiographic feature:
     name: Primary physiographic feature
@@ -619,7 +601,6 @@ slots:
       - value: wet meadow ecosystem [ENVO:01000449]; mountain [ENVO:00000081]
       - value: For annotating a pooled sample taken from various vegetation layers in a forest, consider - canopy [ENVO:00000047]; herb and fern layer [ENVO:01000337]; litter layer [ENVO:01000338]; understory [01000335]; shrub layer [ENVO:01000336].
     range: string
-    slot_uri: ENVO
     recommended: true
   biome:
     name: biome
@@ -630,7 +611,6 @@ slots:
       - value: shrubland biome [ENVO:01000176]
       - value: tropical moist broadleaf forest biome [ENVO:01000228]; estuarine biome [ENVO:01000020]
     range: string
-    slot_uri: ENVO
     recommended: true
   Release Date:
     name: Release Date

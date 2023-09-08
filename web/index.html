@@ -8,21 +8,35 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row mt-3">
-        <div class="col">
-          <div id="data-harmonizer-toolbar"></div>
+        <div class="row mt-3">
+            <div class="col">
+                <div id="data-harmonizer-toolbar"></div>
+            </div>
         </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col">
-          <div id="data-harmonizer-grid" class="data-harmonizer-grid"></div>
+        <div class="row mt-3">
+            <div class="col">
+                <div id="data-harmonizer-grid" class="data-harmonizer-grid"></div>
+            </div>
         </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col col-md-6">
-          <div id="data-harmonizer-footer"></div>
+        <div class="row mt-3">
+            <div class="col col-md-6">
+                <div id="data-harmonizer-footer"></div>
+            </div>
         </div>
-      </div>
     </div>
+
+  <div class="legend">
+    <span class="legend-item" style="background-color: red;"></span> Empty
+    <span class="legend-item" style="background-color: #ffcccb;"></span> Invalid
+    <span class="legend-item" style="background-color: plum;"></span> Recommended
+    <span class="legend-item" style="background-color: yellow;"></span> Required
+  </div>
+
+  <div id="validation-messages-container">
+    <h2>Validation Messages</h2>
+    <ul id="validation-messages">
+    <!-- Empty initial list element -->
+    </ul>
+  </div>
   </body>
 </html>

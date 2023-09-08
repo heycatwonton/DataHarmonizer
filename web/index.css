@@ -14,7 +14,7 @@ body {
   background-color: #ffcccb !important;
 }
 .data-harmonizer-grid td.empty-invalid-cell {
-  background-color: #ff91a4 !important;
+  background-color: red !important;
 }
 .data-harmonizer-grid .htAutocompleteArrow {
   color: gray;
@@ -54,4 +54,55 @@ body {
 
 .add-rows-input {
   max-width: 100px;
+}
+
+/* Style the legend container */
+.legend {
+  margin-top: 20px; /* Adjust the margin as needed */
+  padding: 10px;
+  background-color: #f0f0f0; /* Background color for the legend container */
+  border: 1px solid #ccc; /* Border for the legend container */
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style each legend item */
+.legend-item {
+  display: inline-block;
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  margin-right: 5px; /* Adjust the margin between legend items as needed */
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Style the validation messages container */
+#validation-messages-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Style the validation messages header */
+#validation-messages-container h2 {
+    font-size: 1.2em; /* Set the font size for the header */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 10px; /* Add margin below the header */
+    color: #333; /* Set the text color for the header */
+    text-align: center; /* Center the header text */
+}
+
+/* Style the validation messages list */
+#validation-messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style each validation message item */
+#validation-messages li {
+    margin: 5px 0;
+    color: red;
+    font-weight: bold;
 }
