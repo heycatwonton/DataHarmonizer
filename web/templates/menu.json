@@ -61,8 +61,8 @@
     }
   },
   "ess-dive": {
-    "ESS-DIVE": {
-      "name": "ESS-DIVE",
+    "EssDive": {
+      "name": "EssDive",
       "status": "published",
       "display": true
     }

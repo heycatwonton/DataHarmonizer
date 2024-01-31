@@ -11,7 +11,7 @@ body {
   cursor: pointer;
 }
 .data-harmonizer-grid td.invalid-cell {
-  background-color: #ffcccb !important;
+  background-color: red !important;
 }
 .data-harmonizer-grid td.empty-invalid-cell {
   background-color: red !important;

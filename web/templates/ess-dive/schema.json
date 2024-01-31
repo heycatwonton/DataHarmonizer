@@ -1855,7 +1855,6 @@
       ],
       "from_schema": "https://w3id.org/ess-dive",
       "recommended": true,
-      "pattern": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+)$",
       "any_of": [
         {
           "range": "float"
@@ -1876,7 +1875,6 @@
       ],
       "from_schema": "https://w3id.org/ess-dive",
       "recommended": true,
-      "pattern": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+)$",
       "any_of": [
         {
           "range": "float"
@@ -2020,6 +2018,12 @@
     },
     "Current archive contact": {
       "name": "Current archive contact",
+      "annotations": {
+        "display_hint": {
+          "tag": "display_hint",
+          "value": "Email is not mandatory, but helps with communication about samples."
+        }
+      },
       "description": "Address and/or email of the person who should be contacted for information about or access to the sample.",
       "title": "Current archive contact",
       "comments": [
@@ -2777,8 +2781,7 @@
             "EssDive"
           ],
           "slot_group": "Location",
-          "recommended": true,
-          "pattern": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+)$"
+          "recommended": true
         },
         "Depth in Core (max)": {
           "name": "Depth in Core (max)",
@@ -2792,8 +2795,7 @@
             "EssDive"
           ],
           "slot_group": "Location",
-          "recommended": true,
-          "pattern": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\\s-]{1,2}|[^\\s-]+.+[^\\s-]+)$"
+          "recommended": true
         },
         "Depth scale": {
           "name": "Depth scale",

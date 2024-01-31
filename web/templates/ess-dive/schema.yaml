@@ -522,7 +522,6 @@ slots:
       - value: 0.001
     any_of:
       - range: float
-    pattern: '^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     recommended: true
   Depth in Core (max):
     name: Depth in Core (max)
@@ -533,7 +532,6 @@ slots:
       - value: 0.003
     any_of:
       - range: float
-    pattern: '^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     recommended: true
   Depth scale:
     name: Depth scale
@@ -610,6 +608,10 @@ slots:
     title: Current archive contact
     description: Address and/or email of the person who should be contacted for information about or access to the sample.
     comments: Email is not mandatory, but helps with communication about samples.
+    annotations:
+      display_hint:
+        tag: display_hint
+        value: Email is not mandatory, but helps with communication about samples.
     examples:
       - value: scientist@lbl.gov
     range: string
