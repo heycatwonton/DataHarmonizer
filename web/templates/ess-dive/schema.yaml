@@ -331,7 +331,7 @@ slots:
     examples:
       - value: square centimeter
       - value: kilogram
-    range: Size unit menu
+    range: SizeUnitMenu
     recommended: true
   filter_size:
     name: filter_size
@@ -463,7 +463,7 @@ slots:
     examples:
       - value: GPS
       - value: RTK GPS
-    range: Navigation Type menu
+    range: NavigationTypeMenu
     recommended: true
   location_description:
     name: location_description
@@ -482,7 +482,7 @@ slots:
     comments: Use SESAR list, but may change controlled list to GAZ ontology.
     examples:
       - value: United States
-    range: Country menu
+    range: CountryMenu
     required: true
   elevation_start:
     name: elevation_start
@@ -629,78 +629,78 @@ slots:
     title: Related URL Description
     description: Related URL Description
 enums:
-  Object Type menu:
-    name: Object Type menu
+  ObjectTypeMenu:
+    name: ObjectTypeMenu
     permissible_values:
-      Core:
+      core:
         text: Core
-      Core Catcher:
+      core_catcher:
         text: Core Catcher
-      Core Half Round:
+      core_half_round:
         text: Core Half Round
-      Core Piece:
+      core_piece:
         text: Core Piece
-      Core Quarter Round:
+      core_quarter_round:
         text: Core Quarter Round
-      Core Section:
+      core_section:
         text: Core Section
-      Core Section Half:
+      core_section_half:
         text: Core Section Half
-      Core Slab:
+      core_slab:
         text: Core Slab
-      Core Sub-Piece:
+      core_sub_piece:
         text: Core Sub-Piece
-      Core U-Channel:
+      core_u_channel:
         text: Core U-Channel
-      Core Whole Round:
+      core_whole_round:
         text: Core Whole Round
-      CTD:
+      ctd:
         text: CTD
-      Cuttings:
+      cuttings:
         text: Cuttings
-      Dredge:
+      dredge:
         text: Dredge
-      Experimental Specimen:
+      experimental_specimen:
         text: Experimental Specimen
-      Grab:
+      grab:
         text: Grab
-      Hole:
+      hole:
         text: Hole
-      Individual Sample:
+      individual_sample:
         text: Individual Sample
-      Oriented Core:
+      oriented_core:
         text: Oriented Core
-      Other:
+      other:
         text: Other
-      Rock Powder:
+      rock_powder:
         text: Rock Powder
-      Site:
+      site:
         text: Site
-      Terrestrial Section:
+      terrestrial_section:
         text: Terrestrial Section
-  Material menu:
-    name: material menu
+  MaterialMenu:
+    name: MaterialMenu
     permissible_values:
-      Gas:
+      gas:
         text: Gas
-      Particulate:
+      particulate:
         text: Particulate
-      Rock:
+      rock:
         text: Rock
-      Soil:
+      soil:
         text: Soil
-      Sediment:
+      sediment:
         text: Sediment
-      Ice:
+      ice:
         text: Ice
-      Liquid>Aqueous:
+      liquid_aqueous:
         text: Liquid>Aqueous
-      Organic Material:
+      organic_material:
         text: Organic material
-      Plant Structure:
+      plant_structure:
         text: Plant Structure
-  Size unit menu:
-    name: Size unit menu
+  SizeUnitMenu:
+    name: SizeUnitMenu
     permissible_values:
       meter:
         text: meter
@@ -714,16 +714,16 @@ enums:
       micrometer:
         text: micrometer
         is_a: length
-      square meter:
+      square_meter:
         text: square meter
         is_a: area
-      square centimeter:
+      square_centimeter:
         text: square centimeter
         is_a: area
-      square millimeter:
+      square_millimeter:
         text: square millimeter
         is_a: area
-      square micrometer:
+      square_micrometer:
         text: square micrometer
         is_a: area
       kilogram:
@@ -744,13 +744,13 @@ enums:
       picogram:
         text: picogram
         is_a: mass
-      cubic meter:
+      cubic_meter:
         text: cubic meter
         is_a: volume
-      cubic centimeter:
+      cubic_centimeter:
         text: cubic centimeter
         is_a: volume
-      cubic decimeter:
+      cubic_decimeter:
         text: cubic decimeter
         is_a: volume
       milliliter:
@@ -765,578 +765,578 @@ enums:
       picoliter:
         text: picoliter
         is_a: volume
-  Navigation Type menu:
-    name: Navigation Type menu
+  NavigationTypeMenu:
+    name: NavigationTypeMenu
     permissible_values:
-      ACOUSTIC_RANGING/GPS:
+      acoustic_ranging_gps:
         text: ACOUSTIC_RANGING/GPS
         description: Acoustic ranging from a GPS-navigated ship to identify the location of instrumentation on the seafloor.
-      DGPS:
+      dgps:
         text: DGPS
         description: Differential GPS
-      DVL:
+      dvl:
         text: DVL
         description: Doppler Velocity Log
-      DVL/LBL:
+      dvl_lbl:
         text: DVL/LBL
         description: Real-time DVL dead-reckoning navigation supplemented with LBL navigation to help constrain fixes to a geographic coordinate system. Errors on the order of 10s (sometimes 100s) of meters are likely in these data.
-      DVL/LBL/INS:
+      dvl_lbl_ins:
         text: DVL/LBL/INS
         description: Real-time DVL dead-reckoning navigation supplemented with LBL navigation and INS (Inertial Navigation System) navigation.
-      DVL/LBL:Renav:
+      dvl_lbl_renav:
         text: DVL/LBL:Renav
-      DVL/LBL:Renav:Confirmed:
+      dvl_lbl_renav_confirmed:
         text: DVL/LBL:Renav:Confirmed
-      DVL/USBL:
+      dvl_usbl:
         text: DVL/USBL
-      DVL/USBL/INS:
+      dvl_usbl_ins:
         text: DVL/USBL/INS
-      DVL/USBL:Renav:
+      dvl_usbl_renav:
         text: DVL/USBL:Renav
-      DVL:Renav:
+      dvl_renav:
         text: DVL:Renav
-      DVL:Renav:Confirmed:
+      dvl_renav_confirmed:
         text: DVL:Renav:Confirmed
-      GLONASS:
+      glonass:
         text: GLONASS
-      GPS:
+      gps:
         text: GPS
-      GPS/WireOut:
+      gps_wire_out:
         text: GPS/WireOut
-      GPS:Assumed:
+      gps_assumed:
         text: GPS:Assumed
-      INS/DVL:Renav:
+      ins_dvl_renav:
         text: INS/DVL:Renav
-      LAYBACK:
+      layback:
         text: LAYBACK
-      LAYBACK/LBL:
+      layback_lbl:
         text: LAYBACK/LBL
-      LAYBACK:Renav:
+      layback_renav:
         text: LAYBACK:Renav
-      LBL:
+      lbl:
         text: LBL
-      LBL:Renav:
+      lbl_renav:
         text: LBL:Renav
-      Locale:
+      locale:
         text: Locale
-      LORAN:
+      loran:
         text: LORAN
-      RTK GPS:
+      rtk_gps:
         text: RTK GPS
-      USBL:
+      usbl:
         text: USBL
-  Country menu:
-    name: Country menu
+  CountryMenu:
+    name: CountryMenu
     permissible_values:
-      Afghanistan:
+      afghanistan:
         text: Afghanistan
-      Åland Islands:
+      aland_islands:
         text: Åland Islands
-      Albania:
+      albania:
         text: Albania
-      Algeria:
+      algeria:
         text: Algeria
-      American Samoa:
+      american_samoa:
         text: American Samoa
-      Andorra:
+      andorra:
         text: Andorra
-      Angola:
+      angola:
         text: Angola
-      Anguilla:
+      anguilla:
         text: Anguilla
-      Antarctica:
+      antarctica:
         text: Antarctica
-      Antigua And Barbuda:
+      antigua_and_barbuda:
         text: Antigua And Barbuda
-      Argentina:
+      argentina:
         text: Argentina
-      Armenia:
+      armenia:
         text: Armenia
-      Aruba:
+      aruba:
         text: Aruba
-      Australia:
+      australia:
         text: Australia
-      Austria:
+      austria:
         text: Austria
-      Azerbaijan:
+      azerbaijan:
         text: Azerbaijan
-      Bahamas:
+      bahamas:
         text: Bahamas
-      Bahrain:
+      bahrain:
         text: Bahrain
-      Bangladesh:
+      bangladesh:
         text: Bangladesh
-      Barbados:
+      barbados:
         text: Barbados
-      Belarus:
+      belarus:
         text: Belarus
-      Belgium:
+      belgium:
         text: Belgium
-      Belize:
+      belize:
         text: Belize
-      Benin:
+      benin:
         text: Benin
-      Bermuda:
+      bermuda:
         text: Bermuda
-      Bhutan:
+      bhutan:
         text: Bhutan
-      Bolivia:
+      bolivia:
         text: Bolivia
-      Bonaire, Sint Eustatius and Saba:
+      bonaire_sint_eustatius_and_saba:
         text: Bonaire, Sint Eustatius and Saba
-      Bosnia And Herzegovina:
+      bosnia_and_herzegovina:
         text: Bosnia And Herzegovina
-      Botswana:
+      botswana:
         text: Botswana
-      Bouvet Island:
+      bouvet_island:
         text: Bouvet Island
-      Brazil:
+      brazil:
         text: Brazil
-      British Indian Ocean Territory:
+      british_indian_ocean_territory:
         text: British Indian Ocean Territory
-      Brunei Darussalam:
+      brunei_darussalam:
         text: Brunei Darussalam
-      Bulgaria:
+      bulgaria:
         text: Bulgaria
-      Burkina Faso:
+      burkina_faso:
         text: Burkina Faso
-      Burundi:
+      burundi:
         text: Burundi
-      Cambodia:
+      cambodia:
         text: Cambodia
-      Cameroon:
+      cameroon:
         text: Cameroon
-      Canada:
+      canada:
         text: Canada
-      Cape Verde:
+      cape_verde:
         text: Cape Verde
-      Cayman Islands:
+      cayman_islands:
         text: Cayman Islands
-      Central African Republic:
+      central_african_republic:
         text: Central African Republic
-      Chad:
+      chad:
         text: Chad
-      Chile:
+      chile:
         text: Chile
-      China:
+      china:
         text: China
-      Christmas Island:
+      christmas_island:
         text: Christmas Island
-      Cocos (keeling) Islands:
+      cocos_keeling_islands:
         text: Cocos (keeling) Islands
-      Colombia:
+      colombia:
         text: Colombia
-      Comoros:
+      comoros:
         text: Comoros
-      Congo:
+      congo:
         text: Congo
-      Congo, The Democratic Republic Of The:
+      congo_the_democratic_republic_of_the:
         text: Congo, The Democratic Republic Of The
-      Cook Islands:
+      cook_islands:
         text: Cook Islands
-      Costa Rica:
+      costa_rica:
         text: Costa Rica
-      Cote D’ivoire:
+      cote_d_ivoire:
         text: Cote D’ivoire
-      Croatia:
+      croatia:
         text: Croatia
-      Cuba:
+      cuba:
         text: Cuba
-      Curaçao:
+      curaçao:
         text: Curaçao
-      Cyprus:
+      cyprus:
         text: Cyprus
-      Czech Republic:
+      czech_republic:
         text: Czech Republic
-      Denmark:
+      denmark:
         text: Denmark
-      Djibouti:
+      djibouti:
         text: Djibouti
-      Dominica:
+      dominica:
         text: Dominica
-      Dominican Republic:
+      dominican_republic:
         text: Dominican Republic
-      East Timor:
+      east_timor:
         text: East Timor
-      Ecuador:
+      ecuador:
         text: Ecuador
-      Egypt:
+      egypt:
         text: Egypt
-      El Salvador:
+      el_salvador:
         text: El Salvador
-      Equatorial Guinea:
+      equatorial_guinea:
         text: Equatorial Guinea
-      Eritrea:
+      eritrea:
         text: Eritrea
-      Estonia:
+      estonia:
         text: Estonia
-      Ethiopia:
+      ethiopia:
         text: Ethiopia
-      Falkland Islands (Malvinas):
+      falkland_islands_malvinas:
         text: Falkland Islands (Malvinas)
-      Faroe Islands:
+      faroe_islands:
         text: Faroe Islands
-      Fiji:
+      fiji:
         text: Fiji
-      Finland:
+      finland:
         text: Finland
-      France:
+      france:
         text: France
-      French Guiana:
+      french_guiana:
         text: French Guiana
-      French Polynesia:
+      french_polynesia:
         text: French Polynesia
-      French Southern Territories:
+      french_southern_territories:
         text: French Southern Territories
-      Gabon:
+      gabon:
         text: Gabon
-      Gambia:
+      gambia:
         text: Gambia
-      Georgia:
+      georgia:
         text: Georgia
-      Germany:
+      germany:
         text: Germany
-      Ghana:
+      ghana:
         text: Ghana
-      Gibraltar:
+      gibraltar:
         text: Gibraltar
-      Greece:
+      greece:
         text: Greece
-      Greenland:
+      greenland:
         text: Greenland
-      Grenada:
+      grenada:
         text: Grenada
-      Guadeloupe:
+      guadeloupe:
         text: Guadeloupe
-      Guam:
+      guam:
         text: Guam
-      Guatemala:
+      guatemala:
         text: Guatemala
-      Guernsey:
+      guernsey:
         text: Guernsey
-      Guinea:
+      guinea:
         text: Guinea
-      Guinea-Bissau:
+      guinea_bissau:
         text: Guinea-Bissau
-      Guyana:
+      buyana:
         text: Guyana
-      Haiti:
+      haiti:
         text: Haiti
-      Heard Island And Mcdonald Islands:
+      heard_island_and_mcdonald_islands:
         text: Heard Island And Mcdonald Islands
-      Holy See (Vatican City State):
+      holy_see_vatican_city_state:
         text: Holy See (Vatican City State)
-      Honduras:
+      honduras:
         text: Honduras
-      Hong Kong:
+      hong_kong:
         text: Hong Kong
-      Hungary:
+      hungary:
         text: Hungary
-      Iceland:
+      iceland:
         text: Iceland
-      India:
+      india:
         text: India
-      Indonesia:
+      indonesia:
         text: Indonesia
-      Iran:
+      iran:
         text: Iran
-      Iraq:
+      iraq:
         text: Iraq
-      Ireland:
+      ireland:
         text: Ireland
-      Isle of Man:
+      isle_of_man:
         text: Isle of Man
-      Israel:
+      israel:
         text: Israel
-      Italy:
+      italy:
         text: Italy
-      Jamaica:
+      jamaica:
         text: Jamaica
-      Japan:
+      japan:
         text: Japan
-      Jersey:
+      jersey:
         text: Jersey
-      Jordan:
+      jordan:
         text: Jordan
-      Kazakhstan:
+      kazakhstan:
         text: Kazakhstan
-      Kenya:
+      kenya:
         text: Kenya
-      Kiribati:
+      kiribati:
         text: Kiribati
-      South Korea:
+      south_korea:
         text: South Korea
-      North Korea:
+      north_korea:
         text: North Korea
-      Kosovo:
+      kosovo:
         text: Kosovo
-      Kuwait:
+      kuwait:
         text: Kuwait
-      Kyrgyzstan:
+      kyrgyzstan:
         text: Kyrgyzstan
-      Lao People’s Democratic Republic:
+      lao_peoples_democratic_republic:
         text: Lao People’s Democratic Republic
-      Latvia:
+      latvia:
         text: Latvia
-      Lebanon:
+      lebanon:
         text: Lebanon
-      Lesotho:
+      lesotho:
         text: Lesotho
-      Liberia:
+      liberia:
         text: Liberia
-      Libya:
+      libya:
         text: Libya
-      Libyan Arab Jamahiriya:
+      libyan_arab_jamahiriya:
         text: Libyan Arab Jamahiriya
-      Liechtenstein:
+      liechtenstein:
         text: Liechtenstein
-      Lithuania:
+      lithuania:
         text: Lithuania
-      Luxembourg:
+      luxembourg:
         text: Luxembourg
-      Macao:
+      macao:
         text: Macao
-      Macedonia:
+      macedonia:
         text: Macedonia
-      Madagascar:
+      madagascar:
         text: Madagascar
-      Malawi:
+      malawi:
         text: Malawi
-      Malaysia:
+      malaysia:
         text: Malaysia
-      Maldives:
+      maldives:
         text: Maldives
-      Mali:
+      mali:
         text: Mali
-      Malta:
+      malta:
         text: Malta
-      Marshall Islands:
+      marshall_sslands:
         text: Marshall Islands
-      Martinique:
+      martinique:
         text: Martinique
-      Mauritania:
+      mauritania:
         text: Mauritania
-      Mauritius:
+      mauritius:
         text: Mauritius
-      Mayotte:
+      mayotte:
         text: Mayotte
-      Mexico:
+      mexico:
         text: Mexico
-      Micronesia, Federated States Of:
+      micronesia_federated_states_of:
         text: Micronesia, Federated States Of
-      Moldova, Republic Of:
+      moldova_republic_of:
         text: Moldova, Republic Of
-      Monaco:
+      monaco:
         text: Monaco
-      Mongolia:
+      mongolia:
         text: Mongolia
-      Montserrat:
+      montserrat:
         text: Montserrat
-      Montenegro:
+      montenegro:
         text: Montenegro
-      Morocco:
+      morocco:
         text: Morocco
-      Mozambique:
+      mozambique:
         text: Mozambique
-      Myanmar (Burma):
+      myanmar_burma:
         text: Myanmar (Burma)
-      Namibia:
+      namibia:
         text: Namibia
-      Nauru:
+      nauru:
         text: Nauru
-      Nepal:
+      nepal:
         text: Nepal
-      Netherlands:
+      netherlands:
         text: Netherlands
-      Netherlands Antilles:
+      netherlands_antilles:
         text: Netherlands Antilles
-      New Caledonia:
+      new_caledonia:
         text: New Caledonia
-      New Zealand:
+      new_zealand:
         text: New Zealand
-      Nicaragua:
+      nicaragua:
         text: Nicaragua
-      Niger:
+      niger:
         text: Niger
-      Nigeria:
+      nigeria:
         text: Nigeria
-      Niue:
+      niue:
         text: Niue
-      Norfolk Island:
+      norfolk_island:
         text: Norfolk Island
-      North Macedonia:
+      north_macedonia:
         text: North Macedonia
-      Northern Mariana Islands:
+      northern_mariana_islands:
         text: Northern Mariana Islands
-      Norway:
+      norway:
         text: Norway
-      Oman:
+      oman:
         text: Oman
-      Pakistan:
+      pakistan:
         text: Pakistan
-      Palau:
+      palau:
         text: Palau
-      Palestine:
+      palestine:
         text: Palestine
-      Panama:
+      panama:
         text: Panama
-      Papua New Guinea:
+      papua_new_guinea:
         text: Papua New Guinea
-      Paraguay:
+      paraguay:
         text: Paraguay
-      Peru:
+      peru:
         text: Peru
-      Philippines:
+      philippines:
         text: Philippines
-      Pitcairn:
+      pitcairn:
         text: Pitcairn
-      Poland:
+      poland:
         text: Poland
-      Portugal:
+      portugal:
         text: Portugal
-      Puerto Rico:
+      puerto_rico:
         text: Puerto Rico
-      Qatar:
+      qatar:
         text: Qatar
-      Reunion:
+      reunion:
         text: Reunion
-      Romania:
+      romania:
         text: Romania
-      Russia:
+      russia:
         text: Russia
-      Rwanda:
+      rwanda:
         text: Rwanda
-      Saint Barthélemy:
+      saint_barthelemy:
         text: Saint Barthélemy
-      Saint Helena:
+      saint_helena:
         text: Saint Helena
-      Saint Helena, Ascension and Tristan da Cunha:
+      saint_helena_ascension_and_tristan_da_cunha:
         text: Saint Helena, Ascension and Tristan da Cunha
-      St. Kitts And Nevis:
+      st_kitts_and_nevis:
         text: St. Kitts And Nevis
-      Saint Lucia:
+      saint_lucia:
         text: Saint Lucia
-      Saint Martin (French part):
+      saint_martin_french_part:
         text: Saint Martin (French part)
-      Saint Pierre And Miquelon:
+      saint_pierre_and_miquelon:
         text: Saint Pierre And Miquelon
-      Saint Vincent And The Grenadines:
+      saint_vincent_and_the_grenadines:
         text: Saint Vincent And The Grenadines
-      Samoa:
+      samoa:
         text: Samoa
-      San Marino:
+      san_marino:
         text: San Marino
-      Sao Tome And Principe:
+      sao_tome_and_principe:
         text: Sao Tome And Principe
-      Saudi Arabia:
+      saudi_arabia:
         text: Saudi Arabia
-      Senegal:
+      senegal:
         text: Senegal
-      Serbia:
+      serbia:
         text: Serbia
-      Seychelles:
+      seychelles:
         text: Seychelles
-      Sierra Leone:
+      sierra_leone:
         text: Sierra Leone
-      Singapore:
+      singapore:
         text: Singapore
-      Slovakia:
+      slovakia:
         text: Slovakia
-      Slovenia:
+      slovenia:
         text: Slovenia
-      Solomon Islands:
+      solomon_islands:
         text: Solomon Islands
-      Somalia:
+      somalia:
         text: Somalia
-      South Africa:
+      south_africa:
         text: South Africa
-      South Georgia And The South Sandwich Islands:
+      south_georgia_and_the_south_sandwich_islands:
         text: South Georgia And The South Sandwich Islands
-      South Sudan:
+      south_sudan:
         text: South Sudan
-      Spain:
+      spain:
         text: Spain
-      Sri Lanka:
+      sri_lanka:
         text: Sri Lanka
-      Sudan:
+      sudan:
         text: Sudan
-      Suriname:
+      suriname:
         text: Suriname
-      Svalbard And Jan Mayen:
+      svalbard_and_jan_mayen:
         text: Svalbard And Jan Mayen
-      Swaziland:
+      swaziland:
         text: Swaziland
-      Sweden:
+      sweden:
         text: Sweden
-      Switzerland:
+      switzerland:
         text: Switzerland
-      Syria:
+      syria:
         text: Syria
-      Taiwan:
+      taiwan:
         text: Taiwan
-      Taiwan, Republic Of China:
+      taiwan_republic_of_china:
         text: Taiwan, Republic Of China
-      Tajikistan:
+      tajikistan:
         text: Tajikistan
-      Tanzania:
+      tanzania:
         text: Tanzania
-      Thailand:
+      thailand:
         text: Thailand
-      Timor-Leste:
+      timor_leste:
         text: Timor-Leste
-      Togo:
+      togo:
         text: Togo
-      Tokelau:
+      tokelau:
         text: Tokelau
-      Tonga:
+      tonga:
         text: Tonga
-      Trinidad And Tobago:
+      trinidad_and_tobago:
         text: Trinidad And Tobago
-      Tunisia:
+      tunisia:
         text: Tunisia
-      Turkey:
+      turkey:
         text: Turkey
-      Türkiye:
+      turkiye:
         text: Türkiye
-      Turkmenistan:
+      turkmenistan:
         text: Turkmenistan
-      Turks And Caicos Islands:
+      turks_and_caicos_islands:
         text: Turks And Caicos Islands
-      Tuvalu:
+      tuvalu:
         text: Tuvalu
-      Uganda:
+      uganda:
         text: Uganda
-      Ukraine:
+      ukraine:
         text: Ukraine
-      United Arab Emirates:
+      united_arab_emirates:
         text: United Arab Emirates
-      United Kingdom:
+      united_kingdom:
         text: United Kingdom
-      United States:
+      united_states:
         text: United States
-      United States Minor Outlying Islands:
+      united_states_minor_outlying_islands:
         text: United States Minor Outlying Islands
-      Uruguay:
+      uruguay:
         text: Uruguay
-      Uzbekistan:
+      uzbekistan:
         text: Uzbekistan
-      Vanuatu:
+      vanuatu:
         text: Vanuatu
-      Venezuela:
+      venezuela:
         text: Venezuela
-      Viet Nam:
+      viet_nam:
         text: Viet Nam
-      British Virgin Islands:
+      british_virgin_islands:
         text: British Virgin Islands
-      U.S. Virgin Islands:
+      us_virgin_islands:
         text: U.S. Virgin Islands
-      Wallis And Futuna:
+      wallis_and_futuna:
         text: Wallis And Futuna
-      Western Sahara:
+      western_sahara:
         text: Western Sahara
-      Yemen:
+      yemen:
         text: Yemen
-      Zambia:
+      zambia:
         text: Zambia
 types:
   Provenance:
