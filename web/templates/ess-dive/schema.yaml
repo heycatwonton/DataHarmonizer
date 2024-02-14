@@ -18,189 +18,189 @@ classes:
     description: ESS-DIVE specification for data
     is_a: dh_interface
     slots:
-    - Sample Name
-    - Other name(s)
-    - IGSN
-    - Parent IGSN
-    - Collection ID
-    - Event ID
-    - Location ID
-    - Material
-    - Field name (informal classification)
-    - Sample description
-    - Purpose
-    - Size
-    - Size unit
-    - Filter size
-    - Filter Size Unit
-    - Scientific name
-    - Comment
-    - Collector/Chief Scientist
-    - Collection date
-    - Collection time
-    - Collection method description
-    - Sample processing
-    - Field program/cruise
-    - Latitude
-    - Longitude
-    - Navigation type
-    - Location description
-    - Country
-    - Elevation start
-    - Elevation end
-    - Elevation unit
-    - Depth in Core (min)
-    - Depth in Core (max)
-    - Depth scale
-    - Minimum distance above surface in meters
-    - Maximum distance above surface in meters
-    - Primary physiographic feature
-    - Biome
-    - Release Date
-    - Current archive
-    - Current archive contact
-    - Related URL
-    - Related URL Type
+    - sample_name
+    - other_names
+    - igsn
+    - parent_igsn
+    - collection_id
+    - event_id
+    - location_id
+    - material
+    - field_name_informal_classification
+    - sample_description
+    - purpose
+    - size
+    - size_unit
+    - filter_size
+    - filter_size_unit
+    - scientific_name
+    - comment
+    - collector_chief_scientist
+    - collection_date
+    - collection_time
+    - collection_method_description
+    - sample_processing
+    - field_program_cruise
+    - latitude
+    - longitude
+    - navigation_type
+    - location_description
+    - country
+    - elevation_start
+    - elevation_end
+    - elevation_unit
+    - depth_in_core_min
+    - depth_in_core_max
+    - depth_scale
+    - minimum_distance_above_surface_in_meters
+    - maximum_distance_above_surface_in_meters
+    - primary_physiographic_feature
+    - biome
+    - release_date
+    - current_archive
+    - current_archive_contact
+    - related_url
+    - related_url_type
     - related_url_description
     slot_usage:
-      Sample Name:
+      sample_name:
         rank: 1
         slot_group: Sample IDs and Related Identifiers
-      Other name(s):
+      other_names:
         rank: 2
         slot_group: Sample IDs and Related Identifiers
-      IGSN:
+      igsn:
         rank: 3
         slot_group: Sample IDs and Related Identifiers
-      Parent IGSN:
+      parent_igsn:
         rank: 4
         slot_group: Sample IDs and Related Identifiers
-      Collection ID:
+      collection_id:
         rank: 5
         slot_group: Sample IDs and Related Identifiers
-      Event ID:
+      event_id:
         rank: 6
         slot_group: Sample IDs and Related Identifiers
-      Location ID:
+      location_id:
         rank: 7
         slot_group: Sample IDs and Related Identifiers
-      Material:
+      material:
         rank: 8
         slot_group: Sample Description
-      Field name (informal classification):
+      field_name_informal_classification:
         rank: 9
         slot_group: Sample Description
-      Sample description:
+      sample_description:
         rank: 10
         slot_group: Sample Description
-      Purpose:
+      purpose:
         rank: 11
         slot_group: Sample Description
-      Size:
+      size:
         rank: 12
         slot_group: Sample Description
-      Size unit:
+      size_unit:
         rank: 13
         slot_group: Sample Description
-      Filter size:
+      filter_size:
         rank: 14
         slot_group: Sample Description
-      Filter Size Unit:
+      filter_size_unit:
         rank: 15
         slot_group: Sample Description
-      Scientific name:
+      scientific_name:
         rank: 16
         slot_group: Sample Description
-      Comment:
+      comment:
         rank: 17
         slot_group: Sample Description
-      Collector/Chief Scientist:
+      collector_chief_scientist:
         rank: 18
         slot_group: Sample Collection Details
-      Collection date:
+      collection_date:
         rank: 19
         slot_group: Sample Collection Details
-      Collection time:
+      collection_time:
         rank: 20
         slot_group: Sample Collection Details
-      Collection method:
+      collection_method:
         rank: 21
         slot_group: Sample Collection Details
-      Collection method description:
+      collection_method_description:
         rank: 22
         slot_group: Sample Collection Details
-      Sample processing:
+      sample_processing:
         rank: 23
         slot_group: Sample Collection Details
-      Field program/cruise:
+      field_program_cruise:
         rank: 24
         slot_group: Sample Collection Details
-      Latitude:
+      latitude:
         rank: 25
         slot_group: Location
-      Longitude:
+      longitude:
         rank: 26
         slot_group: Location
-      Navigation type:
+      navigation_type:
         rank: 27
         slot_group: Location
-      Location description:
+      location_description:
         rank: 28
         slot_group: Location
-      Country:
+      country:
         rank: 29
         slot_group: Location
-      Elevation start:
+      elevation_start:
         rank: 30
         slot_group: Location
-      Elevation end:
+      elevation_end:
         rank: 31
         slot_group: Location
-      Elevation unit:
+      elevation_unit:
         rank: 32
         slot_group: Location
-      Depth in Core (min):
+      depth_in_core_min:
         rank: 33
         slot_group: Location
-      Depth in Core (max):
+      depth_in_core_max:
         rank: 34
         slot_group: Location
-      Depth scale:
+      depth_scale:
         rank: 35
         slot_group: Location
-      Minimum distance above surface in meters:
+      minimum_distance_above_surface_in_meters:
         rank: 36
         slot_group: Location
-      Maximum distance above surface in meters:
+      maximum_distance_above_surface_in_meters:
         rank: 37
         slot_group: Location
-      Primary physiographic feature:
+      primary_physiographic_feature:
         rank: 38
         slot_group: Environmental Context
-      Biome:
+      biome:
         rank: 39
         slot_group: Environmental Context
-      Release Date:
+      release_date:
         rank: 40
         slot_group: Sample Access
-      Current archive:
+      current_archive:
         rank: 41
         slot_group: Sample Access
-      Current archive contact:
+      current_archive_contact:
         rank: 42
         slot_group: Sample Access
-      Related URL:
+      related_url:
         rank: 43
         slot_group: Sample Access
-      Related URL Type:
+      related_url_type:
         rank: 44
         slot_group: Sample Access
       related_url_description:
         rank: 45
         slot_group: Sample Access
 slots:
-  Sample Name:
-    name: Sample Name
+  sample_name:
+    name: sample_name
     title: Sample Name
     description: Collector's project-specific sample name, which must be unique for each sample that you are submitting.
     comments: You can develop a sample ID that has meaning to you and may help in your internal, project sample management.
@@ -209,8 +209,8 @@ slots:
     range: string
     required: true
     identifier: true
-  Other name(s):
-    name: Other name(s)
+  other_names:
+    name: other_names
     title: Other name(s)
     description: Other sample name(s) that have been used in the past.
     comments: Use a semi-colon to delimit multiple names where needed.
@@ -218,18 +218,18 @@ slots:
       - value:
     range: string
     required: false
-  IGSN:
-    name: IGSN
+  igsn:
+    name: igsn
     title: IGSN
     description: Globally unique and persistent identifier for the sample. Leave blank if you want SESAR to assign the IGSN, which is recommended.
-    comments: For split samples/subsamples, you can assign your own 1-2 character extensions from the Parent IGSN, and submit your own IGSNs for registering these child samples. This is not required, but is an option if desired. For assigning your own IGSNS, you must use upper-case alpha-numeric characters.
+    comments: For split samples/subsamples, you can assign your own 1-2 character extensions from the parent_igsn, and submit your own IGSNs for registering these child samples. This is not required, but is an option if desired. For assigning your own IGSNS, you must use upper-case alpha-numeric characters.
     examples:
       - value: IEWER7214
       - value: IEMEG0215
     range: string
     recommended: true
-  Parent IGSN:
-    name: Parent IGSN
+  parent_igsn:
+    name: parent_igsn
     title: Parent IGSN
     description: The larger sample from which a child sample was derived. For example, a core section may be the parent of a series of subsamples or split samples. Parent and child samples are linked in the SESAR catalog. Sibling samples are inferred from parent-child relationships and are linked on the landing page for a sample.
     comments: Leave blank if a parent IGSN does not exist.
@@ -237,8 +237,8 @@ slots:
       - value: IEMEG0002
     range: string
     recommended: true
-  Collection ID:
-    name: Collection ID
+  collection_id:
+    name: collection_id
     title: Collection ID
     description: A unique identifier for the set of information associated with a collection of samples; collections may be organized around a particular project, data set, field season, region, site, etc.
     comments: Must be unique within the data package (project-assigned, and does not need to be globally unique). See link to diagram that demonstrates linking related collection, site, event, and sample IDs. A collection identifier can be used to link a set of samples together, and/or to enable efficient entry of metadata that is the same across all samples in a "sample collection."
@@ -247,8 +247,8 @@ slots:
     range: string
     required: false
     identifier: true
-  Event ID:
-    name: Event ID
+  event_id:
+    name: event_id
     title: Event ID
     description: A unique identifier for the set of information associated with an Event (something that occurs at a place and time).
     comments: Must be unique within the data package (project-assigned, and does not need to be globally unique). See link to diagram that demonstrates linking related
@@ -258,8 +258,8 @@ slots:
     range: string
     required: false
     identifier: true
-  Location ID:
-    name: Location ID
+  location_id:
+    name: location_id
     title: Location ID
     description: A unique identifier for the set of location information. May be a global unique identifier or an identifier specific to the data set.
     comments: Must be unique within the data package (project-assigned, and does not need to be globally unique). See link to diagram that demonstrates linking related collection, site, event, and sample IDs. A site identifier can be used to link a set of samples collected from a specific site, and/or to enable efficient entry of metadata that is the same across these samples.
@@ -268,20 +268,20 @@ slots:
     range: string
     required: false
     identifier: true
-  Material:
-    name: Material
+  material:
+    name: material
     title: Material
-    description: Material that the sample consists of.
+    description: material that the sample consists of.
     comments: Use a semi-colon to delimit multiple materials where needed. Please provide feedback on any other terms needed.
     examples:
       - value: Soil
       - value: Sediment
       - value: Gas
       - value: Liquid>aqueous
-    range: Material menu
+    range: material menu
     required: true
-  Field name (informal classification):
-    name: Field name (informal classification)
+  field_name_informal_classification:
+    name: field_name_informal_classification
     title: Field name (informal classification)
     description: Informal classification of sample
     comments: Here you can add additional material classifications that are not in the current SESAR IGSN controlled fields.
@@ -292,8 +292,8 @@ slots:
       - value: groundwater
     range: string
     required: false
-  Sample description:
-    name: Sample description
+  sample_description:
+    name: sample_description
     title: Sample description
     description: Description of sample features, such as its components, texture, color, shape, treatments, plot ID from which the sample was taken, etc.
     comments: None
@@ -302,8 +302,8 @@ slots:
       - value: Filter used for filtered surface water samples
     range: string
     recommended: true
-  Purpose:
-    name: Purpose
+  purpose:
+    name: purpose
     title: Purpose
     description: The scientific purpose for collecting the sample.
     comments: Purpose may often be the same across a series/collection of samples; To avoid entering the same information across numerous samples, you can create a separate file with metadata to describe a sample collection, which contains a "collectionID", and any associated metadata fields (e.g. "collectionMethodDescription", "Purpose" "Chief Scientist", etc.).
@@ -312,8 +312,8 @@ slots:
       - value: geochemistry and microbiology of soils associated with trees and shrubs
     range: string
     recommended: true
-  Size:
-    name: Size
+  size:
+    name: size
     title: Size
     description: Size of the registered object, such as the surface area, length of a core, weight, or volume.
     comments: Must be associated with Size unit.
@@ -323,8 +323,8 @@ slots:
     any_of:
     - range: float
     required: false
-  Size unit:
-    name: Size unit
+  size_unit:
+    name: size_unit
     title: Size unit
     description: Unit for the numerical value provided for ‘size’.
     comments: Use any additional unit terms from Units Ontology, and provide feedback.
@@ -333,26 +333,26 @@ slots:
       - value: kilogram
     range: Size unit menu
     recommended: true
-  Filter size:
-    name: Filter size
-    title: Filter size
+  filter_size:
+    name: filter_size
+    title: Filter Size
     description: Filtering pore size used in sample preparation (filter size value range). Filter size value range.
     comments: Number range (float-float)
     examples:
       - value: 0-0.22
     pattern: '^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
     recommended: true
-  Filter Size Unit:
-    name: Filter Size Unit
-    title: Filter Size Unit
+  filter_size_unit:
+    name: filter_size_unit
+    title: Filter Size unit
     description: Filtering pore size unit.
     comments: Unit for the numerical values provided for "Filter Size"
     examples:
       - value: micrometer
     range: string
     recommended: false
-  Scientific name:
-    name: Scientific name
+  scientific_name:
+    name: scientific_name
     title: Scientific name
     description: The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined.
     examples:
@@ -361,15 +361,15 @@ slots:
     range: string
     pattern: ^[A-Z][a-z]+ [a-z][a-zA-Z]+$
     recommended: true
-  Comment:
-    name: Comment
+  comment:
+    name: comment
     title: Comment
     description: Comments or notes about the sample.
     comments: You can include weather descriptions here, if relevant.
     range: string
     required: false
-  Collector/Chief Scientist:
-    name: Collector/Chief Scientist
+  collector_chief_scientist:
+    name: collector_chief_scientist
     title: Collector/Chief Scientist
     description: Name of the person(s) who collected the sample.
     comments: You can enter multiple collectors/sampling team for large sampling efforts, separated with a semi-colon. If the collector(s) of the sample(s) is/are not known, enter name of the person responsible for the sample
@@ -378,8 +378,8 @@ slots:
       - value: John Smith; Jane Johnson
     range: string
     required: true
-  Collection date:
-    name: Collection date
+  collection_date:
+    name: collection_date
     title: Collection date
     description: Date when the sample was collected.
     comments: All dates and times must be reported in Coordinated Universal Time (UTC) and follow the ISO 8601 standard (RFC 3339). Temporal data using different standards can be provided as a separate variable (column) in addition to UTC format; YYYY-MM-DD
@@ -387,8 +387,8 @@ slots:
       - value: 2019-08-14
     range: date
     required: true
-  Collection time:
-    name: Collection time
+  collection_time:
+    name: collection_time
     title: Collection time
     description: Time when the sample was collected.
     comments: All dates and times must be reported in Coordinated Universal Time (UTC) and follow the ISO 8601 standard (RFC 3339). Temporal data using different standards can be provided as a separate variable (column) in addition to UTC format; HH:MM:SSZ
@@ -396,12 +396,12 @@ slots:
       - value: 12:05:03
     range: dateTime
     required: false
-  Collection method:
-    name: Collection method
+  collection_method:
+    name: collection_method
     title: Collection method
     description: method of collection for the sample.
-  Collection method description:
-    name: Collection method description
+  collection_method_description:
+    name: collection_method_description
     title: Collection method description
     description: Description of the collection method for the sample. Include any important terms and details for potential users to understand how your sample was collected.
     comments: Collection methods may often be the same across a series/collection of samples; there are two options for providing collection method details at a higher level. Option 1 -  Create a separate file with metadata to describe a sample collection, which contains a "collectionID", and any associated metadata fields (e.g. "collectionMethodDescription", "Purpose", "Chief Scientist", etc.). Option 2 - Create a methods file, with a series of methods descriptions that are each associated with a "methodID" and an associated "methodDescription."
@@ -411,8 +411,8 @@ slots:
       - value: Example 3) Pumped water at specific depths using tubing connected to CTD.
     range: string
     required: true
-  Sample processing:
-    name: Sample processing
+  sample_processing:
+    name: sample_processing
     title: Sample processing
     description: Any processing applied to the sample during or after retrieving the sample from the environment. Can provide a list of preparations and preservation methods for the sample.
     comments: Sample processing may often be the same across a series/collection of samples. To avoid entering the same information across numerous samples, you can create a separate file with metadata to describe a sample collection, which contains a "collectionID", and any associated metadata fields (e.g. "sampleProcessing", "collectionMethodDescription", "Purpose", "Chief Scientist", etc.). Separate multiple sample processing methods with a semi-colon.
@@ -421,8 +421,8 @@ slots:
       - value: store samples in ethanol
     range: string
     recommended: true
-  Field program/cruise:
-    name: Field program/cruise
+  field_program_cruise:
+    name: field_program_cruise
     title: Field program/cruise
     description: Enter the name of the DOE project to associate with this/these sample(s).
     comments: Required at dataset level, but want to associate with samples for data search and integration. Project details may often be the same across a series/collection of samples; To avoid entering the same information across numerous samples, you can create a separate file with metadata to describe a project or sample collection, which contains a "collectionID" or "Field Program/Cruise", and any associated metadata fields (e.g. "Collection Method Description", "Purpose", "Chief Scientist"...
@@ -431,8 +431,8 @@ slots:
       - value: LBNL Watershed Function SFA
     range: string
     required: true
-  Latitude:
-    name: Latitude
+  latitude:
+    name: latitude
     title: Latitude
     description: Latitude of the location where the sample was collected, entered in decimal degrees. Negative values for South latitudes.
     comments: Decimal degrees, coordinate system is WGS 84. Please supply no more than 6 decimal places (meter scale resolution) in the actual number (not just display format.) No letters are allowed.
@@ -443,8 +443,8 @@ slots:
     minimum_value: -90
     pattern: '^-?\d+(\.\d{1,6})?$'
     recommended: true
-  Longitude:
-    name: Longitude
+  longitude:
+    name: longitude
     title: Longitude
     description: Longitude of the location where the sample was collected. Negative values for ‘West’ longitudes.
     comments: Decimal degrees, coordinate system is WGS 84. Please supply no more than 6 decimal places (meter scale resolution) in the actual number (not just display format.) No letters are allowed.
@@ -455,8 +455,8 @@ slots:
     minimum_value: -180
     pattern: '^-?\d+(\.\d{1,6})?$'
     recommended: true
-  Navigation type:
-    name: Navigation type
+  navigation_type:
+    name: navigation_type
     title: Navigation type
     description: Type of geolocation instrument used to obtain geographic coordinates.
     comments: Provide feedback on additional terms needed.
@@ -465,8 +465,8 @@ slots:
       - value: RTK GPS
     range: Navigation Type menu
     recommended: true
-  Location description:
-    name: Location description
+  location_description:
+    name: location_description
     title: Location description
     description: Free text description of the location.
     comments: You can also include details here about the location type, e.g. whether it is an absolute or reference location, plot ID and description.
@@ -475,8 +475,8 @@ slots:
       - value: Panama
     range: string
     recommended: true
-  Country:
-    name: Country
+  country:
+    name: country
     title: Country
     description: Country where the sample was collected.
     comments: Use SESAR list, but may change controlled list to GAZ ontology.
@@ -484,8 +484,8 @@ slots:
       - value: United States
     range: Country menu
     required: true
-  Elevation start:
-    name: Elevation start
+  elevation_start:
+    name: elevation_start
     title: Elevation start
     description: Elevation at which a sample was collected. Minimum elevation value, if elevation taken over a range.
     comments: Provide elevation in meters where possible.
@@ -494,8 +494,8 @@ slots:
     any_of:
       - range: float
     recommended: false
-  Elevation end:
-    name: Elevation end
+  elevation_end:
+    name: elevation_end
     title: Elevation end
     description: Maximum elevation at which a sample was collected, if elevation was taken over a range.
     comments: Leave blank if elevation is a single value and not range. Provide elevation in meters where possible.
@@ -504,8 +504,8 @@ slots:
     any_of:
       - range: float
     recommended: false
-  Elevation unit:
-    name: Elevation unit
+  elevation_unit:
+    name: elevation_unit
     title: Elevation unit
     description: Unit that elevation start and/or end are provided in.
     comments: Recommend meters. This will be removed when elevation field is changed to specify meters.
@@ -513,8 +513,8 @@ slots:
       - value: meters
     range: string
     recommended: true
-  Depth in Core (min):
-    name: Depth in Core (min)
+  depth_in_core_min:
+    name: depth_in_core_min
     title: Depth in Core (min)
     description: Depth, or minimum depth (if taken over a range) at which a sample was collected, below ground or under water.
     comments: Recommend using meters.
@@ -523,8 +523,8 @@ slots:
     any_of:
       - range: float
     recommended: true
-  Depth in Core (max):
-    name: Depth in Core (max)
+  depth_in_core_max:
+    name: depth_in_core_max
     title: Depth in Core (max)
     description: Maximum depth at which a sample was collected, below ground or under water.
     comments: Recommend using meters.
@@ -533,8 +533,8 @@ slots:
     any_of:
       - range: float
     recommended: true
-  Depth scale:
-    name: Depth scale
+  depth_scale:
+    name: depth_scale
     title: Depth scale
     description: Unit in which the depth is provided, should be meters.
     comments: This field will be deleted when we change the depth field to be required in meters.
@@ -542,8 +542,8 @@ slots:
       - value: meters
     range: string
     recommended: true
-  Minimum distance above surface in meters:
-    name: Minimum distance above surface in meters
+  minimum_distance_above_surface_in_meters:
+    name: minimum_distance_above_surface_in_meters
     title: Minimum distance above surface in meters
     description: Minimum height above the ground surface, in meters. If no range of values collected, provide height measurement here.
     comments: Recommend using meters.
@@ -552,8 +552,8 @@ slots:
     any_of:
       - range: float
     required: false
-  Maximum distance above surface in meters:
-    name: Maximum distance above surface in meters
+  maximum_distance_above_surface_in_meters:
+    name: maximum_distance_above_surface_in_meters
     title: Maximum distance above surface in meters
     description: Maximum height above the ground surface, in meters.
     comments: Recommend using meters.
@@ -562,8 +562,8 @@ slots:
     any_of:
       - range: float
     required: false
-  Primary physiographic feature:
-    name: Primary physiographic feature
+  primary_physiographic_feature:
+    name: primary_physiographic_feature
     title: Primary physiographic feature
     description: Entity or entities which are in your sample or specimen’s local vicinity and which you believe have significant causal influences on your sample or specimen.
     comments: <a href="https://www.ebi.ac.uk/ols/ontologies/envo">Terms from Environment Ontology (ENVO)</a>. Provide the appropriate term and ENVO identifier - see examples below. Choose environmental context that is a smaller spatial grain than your entry for biome. Delimit multiple values using semi-colon. If needed, request new terms on the ENVO tracker, identified <a href="http://obofoundry.org/ontology/envo.html">here</a>.
@@ -573,8 +573,8 @@ slots:
       - value: For annotating a pooled sample taken from various vegetation layers in a forest, consider - canopy [ENVO:00000047]; herb and fern layer [ENVO:01000337]; litter layer [ENVO:01000338]; understory [01000335]; shrub layer [ENVO:01000336].
     range: string
     recommended: true
-  Biome:
-    name: Biome
+  biome:
+    name: biome
     title: Biome
     description: Major environmental system your sample or specimen came from. The systems identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. were you in the desert or a rainforest?).
     comments: <a href="https://www.ebi.ac.uk/ols/ontologies/envo">Terms from Environment Ontology (ENVO)</a>. Provide the appropriate term and ENVO identifier - see examples below. We recommend using subclasses of <a href="https://ontobee.org/ontology/ENVO?iri=http://purl.obolibrary.org/obo/ENVO_00000428">ENVO’s biome class</a>. Use a semi-colon to delimit multiple biomes where needed. If needed, request new terms on the ENVO tracker, identified <a href="http://obofoundry.org/ontology/envo.html">here</a>.
@@ -583,8 +583,8 @@ slots:
       - value: tropical moist broadleaf forest biome [ENVO:01000228]; estuarine biome [ENVO:01000020]
     range: string
     recommended: true
-  Release Date:
-    name: Release Date
+  release_date:
+    name: release_date
     title: Release Date
     description: Date when sample metadata should be publicly accessible and searchable. If null, defaults to date of registration in SESAR (recommended).
     comments: SESAR recommends that sample metadata become public within 2 years of sample registration; YYYY-MM-DD format
@@ -592,8 +592,8 @@ slots:
       - value: 2018-03-15
     range: date
     required: true
-  Current archive:
-    name: Current archive
+  current_archive:
+    name: current_archive
     title: Current archive
     description: Name of institution, museum, or repository where the sample is currently stored.
     comments: Only applies to physical samples that are archived in a collection for some period of time.
@@ -603,8 +603,8 @@ slots:
       - value: Lakewood, CO
     range: string
     required: false
-  Current archive contact:
-    name: Current archive contact
+  current_archive_contact:
+    name: current_archive_contact
     title: Current archive contact
     description: Address and/or email of the person who should be contacted for information about or access to the sample.
     comments: Email is not mandatory, but helps with communication about samples.
@@ -616,12 +616,12 @@ slots:
       - value: scientist@lbl.gov
     range: string
     required: false
-  Related URL:
-    name: Related URL
+  related_url:
+    name: related_url
     title: Related URL
     description: Related URL
-  Related URL Type:
-    name: Related URL Type
+  related_url_type:
+    name: related_url_type
     title: Related URL Type
     description: Related URL
   related_url_description:
@@ -679,7 +679,7 @@ enums:
       Terrestrial Section:
         text: Terrestrial Section
   Material menu:
-    name: Material menu
+    name: material menu
     permissible_values:
       Gas:
         text: Gas
@@ -696,7 +696,7 @@ enums:
       Liquid>Aqueous:
         text: Liquid>Aqueous
       Organic Material:
-        text: Organic Material
+        text: Organic material
       Plant Structure:
         text: Plant Structure
   Size unit menu:
